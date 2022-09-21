@@ -16,10 +16,4 @@ export const servicesData = [
     title: "Frontend Development",
     icon: <BsCodeSlash />,
   },
-
-  {
-    id: 13,
-    title: "Blog Posting",
-    icon: <FaRegNewspaper />,
-  },
 ];
