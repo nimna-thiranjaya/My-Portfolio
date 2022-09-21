@@ -29,12 +29,12 @@ function About() {
         <div className="about-description">
           <h2 style={{ color: theme.primary }}>Who I am</h2>
           <p style={{ color: theme.tertiary80 }}>
-            My name in Nimna Thiranjaya. I'm intern Full-Stack software Engineer
-            at ICTA of sri lanka.
+            My name in Nimna Thiranjaya. i'm 22 years old and funny man XD 😆
             <br />
             <br />I am a 3rd year 2nd semester undergraduate student at Sri
             Lanka Institute of Information Technology, graduating with a BSc
-            (Hons) in Software Engineering.
+            (Hons) in Software Engineering and also I'm intern Full-Stack
+            software Engineer at ICTA of sri lanka
           </p>
         </div>
         <div className="about-img">
