@@ -1,14 +1,11 @@
 export const socialsData = {
-    github: 'https://github.com/',
-    facebook: 'https://www.facebook.com/',
-    linkedIn: 'https://www.linkedin.com/in',
-    instagram: 'https://www.instagram.com/',
-    codepen: 'https://codepen.io/',
-    twitter: 'https://twitter.com/',
-    reddit: 'https://www.reddit.com/user/',
-    blogger: 'https://www.blogger.com/',
-    medium: 'https://medium.com/@',
-    stackOverflow: 'https://stackoverflow.com/users/',
-    gitlab: 'https://gitlab.com/',
-    youtube: 'https://youtube.com/'
-}
+  github: "https://github.com/nimna-thiranjaya",
+  facebook: "https://www.facebook.com/nimna.thiranjaya.5/",
+  linkedIn: "https://www.linkedin.com/in/nimna-thiranjaya/",
+  instagram: "https://www.instagram.com/__n_i_m_n_a__/",
+  twitter: "https://twitter.com/thiranjayaw",
+  medium: "https://medium.com/@nimnathiranjaya523",
+  stackOverflow: "",
+  gitlab: "",
+  youtube: "https://www.youtube.com/channel/UCfgBWJzQFjOZEFzT88RGEeQ",
+};
