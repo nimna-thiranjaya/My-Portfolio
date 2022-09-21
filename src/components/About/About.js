@@ -29,7 +29,7 @@ function About() {
         <div className="about-description">
           <h2 style={{ color: theme.primary }}>Who I am</h2>
           <p style={{ color: theme.tertiary80 }}>
-            My name in Nimna Thiranjaya. i'm 22 years old and i'm funny man XD
+            My name is Nimna Thiranjaya. i'm 22 years old and i'm funny man XD
             😆
             <br />
             <br />
