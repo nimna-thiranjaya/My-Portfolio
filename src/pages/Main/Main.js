@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 
 import {
   Navbar,
-  Footer,
+  //Footer,
   Landing,
   About,
   Skills,
@@ -11,9 +11,9 @@ import {
   Education,
   Experience,
   Contacts,
-  Projects,
+  //Projects,
   Services,
-  Achievement,
+  // Achievement,
 } from "../../components";
 import { headerData } from "../../data/headerData";
 
