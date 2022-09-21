@@ -43,7 +43,11 @@ function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
       >
         <div className="projectContent">
           <h2 style={{ color: theme.tertiary }}>{name}</h2>
-          <img src={image ? image : placeholder} alt={name} />
+          <img
+            src={image ? image : placeholder}
+            alt={name}
+            style={{ "border-radius": 10 + "px" }}
+          />
           <div className="project--showcaseBtn">
             {demo ? (
               <a
