@@ -4,7 +4,7 @@ export const educationData = [
     image:
       "https://res.cloudinary.com/dx1pvvqg7/image/upload/v1663734912/portfoliyo/SLIIT_Logo_Crest-6829_gwbkhb.png",
     institution: "Sri Lanka Institute of Infromation Technology",
-    course: "BSc (Hons) in Software Engineering",
+    course: "Undergraduate BSc (Hons) in Software Engineering",
     startYear: "2020",
     endYear: "present",
   },
