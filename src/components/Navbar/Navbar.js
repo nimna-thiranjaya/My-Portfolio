@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import { NavHashLink as NavLink } from "react-router-hash-link";
 import Fade from "react-reveal/Fade";
 import { IoMenuSharp, IoHomeSharp } from "react-icons/io5";
-import { HiDocumentText } from "react-icons/hi";
+import { FaUserGraduate } from "react-icons/fa";
 import { BsFillGearFill } from "react-icons/bs";
 import { MdPhone } from "react-icons/md";
 import { FaUser, FaFolderOpen } from "react-icons/fa";
@@ -183,8 +183,8 @@ function Navbar() {
             <Fade left>
               <NavLink to="/#resume" smooth={true} spy="true" duration={2000}>
                 <div className={classes.drawerItem}>
-                  <HiDocumentText className={classes.drawerIcon} />
-                  <span className={classes.drawerLinks}>Resume</span>
+                  <FaUserGraduate className={classes.drawerIcon} />
+                  <span className={classes.drawerLinks}>Education</span>
                 </div>
               </NavLink>
             </Fade>
