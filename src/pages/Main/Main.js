@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 
 import {
   Navbar,
-  //Footer,
+  Footer,
   Landing,
   About,
   Skills,
@@ -11,7 +11,7 @@ import {
   Education,
   Experience,
   Contacts,
-  //Projects,
+  Projects,
   Services,
   // Achievement,
 } from "../../components";
@@ -30,12 +30,12 @@ function Main() {
       <Education />
       <Skills />
       <Experience />
-      {/* <Projects /> */}
+      <Projects />
       {/* <Achievement /> */}
       <Services />
       <Blog />
       <Contacts />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

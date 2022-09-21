@@ -405,7 +405,11 @@ function Contacts() {
           </div>
         </div>
       </div>
-      <img src={theme.contactsimg} alt="contacts" className="contacts--img" />
+      <img
+        src="https://res.cloudinary.com/dx1pvvqg7/image/upload/v1663761502/portfoliyo/Developer_activity-bro_epngua.png"
+        alt="contacts"
+        className="contacts--img"
+      />
     </div>
   );
 }
