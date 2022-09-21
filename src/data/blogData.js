@@ -1,5 +1,26 @@
 export const blogData = [
   {
+    id: 4,
+    title: "WHY SPRING BOOT, A VARIANT OF JAVA, IS SO FAMOUS?",
+    description:
+      "What is Spring Boot.?, Features Of Spring Boot, Create Spring Boot Project ",
+    date: "May 13, 2020",
+    image:
+      "https://res.cloudinary.com/dx1pvvqg7/image/upload/v1663751051/portfoliyo/blog/1_cJiOg0Y3R9D3Gywc6G3rFg_agkh3p.jpg",
+    url: "https://blog.devgenius.io/why-spring-boot-a-variant-of-java-is-so-famous-2b1d2547235e",
+  },
+
+  {
+    id: 5,
+    title: "EVERYTHING YOU NEED TO KNOW ABOUT KOA JS",
+    description:
+      "What is Koa.?, Why Koa Js.?, Create Simple KoaJs project and Run as server, Dev test using postman ",
+    date: "May 13, 2020",
+    image:
+      "https://res.cloudinary.com/dx1pvvqg7/image/upload/v1663751288/portfoliyo/blog/introduction-to-koa-javascript-framework-400x277_1_bm7zve.jpg",
+    url: "https://medium.com/@nimnathiranjaya523/everything-you-need-to-know-about-koa-js-84b73e941713",
+  },
+  {
     id: 1,
     title: "DEVELOP BACKEND APIs USING NODE.JS",
     description:
@@ -8,6 +29,16 @@ export const blogData = [
     image:
       "https://res.cloudinary.com/dx1pvvqg7/image/upload/v1663742356/portfoliyo/blog/1_HEJKvvFc-2TwgCK8tMMTGw_jh7n5a.png",
     url: "https://medium.com/@nimnathiranjaya523/develop-backend-functions-using-node-js-6b42d07ff666",
+  },
+  {
+    id: 3,
+    title: "THE CONTRIBUTION OF NOSQL DATABASES TO DATABASES.",
+    description:
+      "What are the NoSQL databases?, Types of NoSQL Databases, MongoDB",
+    date: "Aug 7, 2020",
+    image:
+      "https://res.cloudinary.com/dx1pvvqg7/image/upload/v1663751426/portfoliyo/blog/1_wIoWjfMfDSRGqHJOOZBB0A_df9bne.jpg",
+    url: "https://medium.com/@nimnathiranjaya523/the-contribution-of-nosql-databases-to-databases-mongodb-6b6d0a2ea403",
   },
   {
     id: 2,
