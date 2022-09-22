@@ -51,16 +51,19 @@ export const projectsData = [
     tags: ["React.Js"],
     code: "",
     demo: "",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dx1pvvqg7/image/upload/v1663828517/portfoliyo/projects/New_Project_3_pkuzlj.png",
   },
   {
     id: 6,
     projectName: "Sri Lanka Digital Helth Atales",
-    projectDesc: "A Simple E-commerce application",
+    projectDesc:
+      "This will provide the required digital health information to improve planning at national and institutional level to assist the coordination of health activities in the country.",
     tags: ["Laravel", "HTML, JavaScript, Ajax, Bootstrap", "MySQL"],
     code: "",
     demo: "",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dx1pvvqg7/image/upload/v1663833618/portfoliyo/projects/9_22_2022_1_28_35_PM_olhn5s.png",
   },
   {
     id: 7,
@@ -70,7 +73,8 @@ export const projectsData = [
     tags: ["Node.Js", "Express.Js", "MySQL", "Prisma ORM"],
     code: "",
     demo: "",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dx1pvvqg7/image/upload/v1663836277/portfoliyo/projects/yyyyyyyyyyyy_fzlkor.png",
   },
   {
     id: 8,
@@ -79,6 +83,7 @@ export const projectsData = [
     tags: ["Laravel", "HTML, JavaScript, Ajax, Bootstrap", "MySQL"],
     code: "",
     demo: "",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dx1pvvqg7/image/upload/v1663836847/portfoliyo/projects/9_22_2022_2_23_13_PM_sbnjby.png",
   },
 ];
