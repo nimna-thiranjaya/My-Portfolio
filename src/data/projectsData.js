@@ -79,7 +79,8 @@ export const projectsData = [
   {
     id: 8,
     projectName: "eRevenue Licence Report Dashboard",
-    projectDesc: "A Simple E-commerce application",
+    projectDesc:
+      "ERL is Online Vehicle Revenue Licence Service in sri lanka. This dashboard create to genareate some report about ERL",
     tags: ["Laravel", "HTML, JavaScript, Ajax, Bootstrap", "MySQL"],
     code: "",
     demo: "",
