@@ -1,7 +1,7 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 import { Snackbar, IconButton, SnackbarContent } from "@material-ui/core";
 import CloseIcon from "@material-ui/icons/Close";
-import axios from "axios";
 import isEmail from "validator/lib/isEmail";
 import { makeStyles } from "@material-ui/core/styles";
 import {
@@ -38,7 +38,7 @@ function Contacts() {
   const [errMsg, setErrMsg] = useState("");
 
   const { theme } = useContext(ThemeContext);
-
+  const form = useRef();
   const handleClose = (event, reason) => {
     if (reason === "clickaway") {
       return;
@@ -134,22 +134,22 @@ function Contacts() {
 
     if (name && email && message) {
       if (isEmail(email)) {
-        const responseData = {
-          name: name,
-          email: email,
-          message: message,
-        };
+        emailjs
+          .sendForm(
+            "service_lt0bjwu",
+            "template_6b58pcb",
+            form.current,
+            "lIDMIOjsbEJgH42qf"
+          )
+          .then((res) => {
+            setSuccess(true);
+            setErrMsg("");
 
-        axios.post(contactsData.sheetAPI, responseData).then((res) => {
-          console.log("success");
-          setSuccess(true);
-          setErrMsg("");
-
-          setName("");
-          setEmail("");
-          setMessage("");
-          setOpen(false);
-        });
+            setName("");
+            setEmail("");
+            setMessage("");
+            setOpen(false);
+          });
       } else {
         setErrMsg("Invalid email");
         setOpen(true);
@@ -167,10 +167,10 @@ function Contacts() {
       style={{ backgroundColor: theme.secondary }}
     >
       <div className="contacts--container">
-        <h1 style={{ color: theme.primary }}>Contacts</h1>
+        <h1 style={{ color: theme.primary }}>Contact me</h1>
         <div className="contacts-body">
           <div className="contacts-form">
-            <form onSubmit={handleContactForm}>
+            <form ref={form} onSubmit={handleContactForm}>
               <div className="input-container">
                 <label htmlFor="Name" className={classes.label}>
                   Name
@@ -180,7 +180,7 @@ function Contacts() {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   type="text"
-                  name="Name"
+                  name="user_name"
                   className={`form-input ${classes.input}`}
                 />
               </div>
@@ -193,7 +193,7 @@ function Contacts() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   type="email"
-                  name="Email"
+                  name="user_email"
                   className={`form-input ${classes.input}`}
                 />
               </div>
@@ -206,7 +206,7 @@ function Contacts() {
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   type="text"
-                  name="Message"
+                  name="message"
                   className={`form-message ${classes.message}`}
                 />
               </div>
@@ -405,7 +405,11 @@ function Contacts() {
           </div>
         </div>
       </div>
-      <img src={theme.contactsimg} alt="contacts" className="contacts--img" />
+      <img
+        src="https://res.cloudinary.com/dx1pvvqg7/image/upload/v1663761502/portfoliyo/Developer_activity-bro_epngua.png"
+        alt="contacts"
+        className="contacts--img"
+      />
     </div>
   );
 }
