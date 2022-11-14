@@ -6,6 +6,6 @@ export const experienceData = [
     company: "Information and Communication Technology Agency of Sri Lanka",
     jobtitle: "Intern Software Engineer",
     startYear: "21.03.2022",
-    endYear: "Present",
+    endYear: "09.11.2022",
   },
 ];

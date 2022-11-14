@@ -86,4 +86,36 @@ export const projectsData = [
     image:
       "https://res.cloudinary.com/dx1pvvqg7/image/upload/v1663836847/portfoliyo/projects/9_22_2022_2_23_13_PM_sbnjby.png",
   },
+
+  {
+    id: 9,
+    projectName: "Recrutment Web Application",
+    projectDesc: "A Simple E-commerce application",
+    tags: ["Laravel", "HTML, JavaScript, Ajax, Bootstrap", "MySQL"],
+    code: "",
+    demo: "",
+    image:
+      "https://res.cloudinary.com/dx1pvvqg7/image/upload/v1663836847/portfoliyo/projects/9_22_2022_2_23_13_PM_sbnjby.png",
+  },
+
+  {
+    id: 10,
+    projectName: "Life On Land Mobile App",
+    projectDesc: "A Mobile application to consevation of Life on Land in sri lanka",
+    tags: ["React-Native", "NodeJS", "MongoDB"],
+    code: "",
+    demo: "",
+    image:
+      "https://res.cloudinary.com/dx1pvvqg7/image/upload/v1663836847/portfoliyo/projects/9_22_2022_2_23_13_PM_sbnjby.png",
+  },
+  {
+    id: 11,
+    projectName: "Bus Ticketing System",
+    projectDesc: "A Mobile Application",
+    tags: ["React-Native", "NodeJS","ReactJS", "MongoDB"],
+    code: "",
+    demo: "",
+    image:
+      "https://res.cloudinary.com/dx1pvvqg7/image/upload/v1663836847/portfoliyo/projects/9_22_2022_2_23_13_PM_sbnjby.png",
+  },
 ];
