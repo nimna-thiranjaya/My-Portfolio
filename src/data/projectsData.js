@@ -87,4 +87,35 @@ export const projectsData = [
     image:
       "https://res.cloudinary.com/dx1pvvqg7/image/upload/v1663836847/portfoliyo/projects/9_22_2022_2_23_13_PM_sbnjby.png",
   },
+
+  {
+    id: 9,
+    projectName: "Recrutment Web Application",
+    projectDesc: "This is a SaaS system that helps candidates come ashore for their dream job. Any candidate can use the website to search and apply for jobs.",
+    tags: ["NodeJS", "ReactJS", "MongoDB"],
+    code: "",
+    demo: "https://recruiters-web.netlify.app/",
+    image:
+      "https://res.cloudinary.com/dx1pvvqg7/image/upload/v1663836847/portfoliyo/projects/9_22_2022_2_23_13_PM_sbnjby.png",
+  },
+  {
+    id: 10,
+    projectName: "Life On Land Mobile App",
+    projectDesc: "A Mobile application to consevation of Life on Land in sri lanka",
+    tags: ["React-Native", "NodeJS", "MongoDB", "Cloudinary"],
+    code: "",
+    demo: "",
+    image:
+      "https://res.cloudinary.com/dx1pvvqg7/image/upload/v1663836847/portfoliyo/projects/9_22_2022_2_23_13_PM_sbnjby.png",
+  },
+  {
+    id: 11,
+    projectName: "Bus Ticketing System",
+    projectDesc: "A Mobile Application",
+    tags: ["React-Native", "NodeJS","ReactJS", "MongoDB"],
+    code: "",
+    demo: "",
+    image:
+      "https://res.cloudinary.com/dx1pvvqg7/image/upload/v1663836847/portfoliyo/projects/9_22_2022_2_23_13_PM_sbnjby.png",
+  },
 ];
