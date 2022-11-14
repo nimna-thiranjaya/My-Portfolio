@@ -33,6 +33,14 @@ export const skillsData = [
     percentage: "20%",
   },
   {
+    name : "React Js",
+    image : "https://res.cloudinary.com/dx1pvvqg7/image/upload/v1668436216/portfoliyo/programming%20languages/react-js-icon_zylaqe.png",
+  },
+  {
+    name : "React-Native",
+    image : "https://res.cloudinary.com/dx1pvvqg7/image/upload/v1668436216/portfoliyo/programming%20languages/react-js-icon_zylaqe.png",
+  },
+  {
     name: "Express Js",
     image:
       "https://res.cloudinary.com/dx1pvvqg7/image/upload/v1663737849/portfoliyo/programming%20languages/Expressjs_cfcfsh.png",
