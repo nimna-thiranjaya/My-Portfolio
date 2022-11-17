@@ -9,10 +9,12 @@ export const projectsData = [
     demo: "https://fuel.gov.lk/",
     image:
       "https://res.cloudinary.com/dx1pvvqg7/image/upload/v1663781128/portfoliyo/projects/Screenshot_2022-09-21_224540_ltdphp.jpg",
-  },  {
+  },
+  {
     id: 9,
     projectName: "Recrutment Web Application",
-    projectDesc: "This is a SaaS system that helps candidates come ashore for their dream job. Any candidate can use the website to search and apply for jobs.",
+    projectDesc:
+      "This is a SaaS system that helps candidates come ashore for their dream job. Any candidate can use the website to search and apply for jobs.",
     tags: ["NodeJS", "ReactJS", "MongoDB"],
     code: "",
     demo: "https://recruiters-web.netlify.app/",
@@ -22,12 +24,23 @@ export const projectsData = [
   {
     id: 10,
     projectName: "Green Woods Mobile App",
-    projectDesc: "This app's primary purpose is to solicit financial contributions from environmentally conscious people all around the world so that those funds can be put to use greater good on life land in Sri Lanka",
+    projectDesc:
+      "This app's primary purpose is to solicit financial contributions from environmentally conscious people all around the world so that those funds can be put to use greater good on life land in Sri Lanka",
     tags: ["React-Native", "NodeJS", "MongoDB", "Cloudinary"],
     code: "",
     demo: "",
     image:
       "https://res.cloudinary.com/dx1pvvqg7/image/upload/v1668608644/portfoliyo/projects/Yellow_Gradient_Background_Minimal_UI_Mockup_Smartphone_Facebook_Post_for_Mobile_Application_s3onkr.png",
+  },
+  {
+    id: 11,
+    projectName: "Bus Ticketing System",
+    projectDesc: "A Mobile Application",
+    tags: ["React-Native", "NodeJS", "ReactJS", "MongoDB"],
+    code: "",
+    demo: "",
+    image:
+      "https://res.cloudinary.com/dx1pvvqg7/image/upload/v1668692948/portfoliyo/projects/New_Product_Mockup_Now_Available_Marketing_Promotion_Instagram_Post_wuski1.png",
   },
   {
     id: 1,
@@ -64,16 +77,16 @@ export const projectsData = [
       "https://res.cloudinary.com/dx1pvvqg7/image/upload/v1663779119/portfoliyo/projects/Screenshot_2022-09-21_222119_trrjqa.jpg",
   },
 
-  {
-    id: 5,
-    projectName: "Customer Relationship Management",
-    projectDesc: "A Simple E-commerce application",
-    tags: ["React.Js"],
-    code: "",
-    demo: "",
-    image:
-      "https://res.cloudinary.com/dx1pvvqg7/image/upload/v1663828517/portfoliyo/projects/New_Project_3_pkuzlj.png",
-  },
+  // {
+  //   id: 5,
+  //   projectName: "Customer Relationship Management",
+  //   projectDesc: "A Simple E-commerce application",
+  //   tags: ["React.Js"],
+  //   code: "",
+  //   demo: "",
+  //   image:
+  //     "https://res.cloudinary.com/dx1pvvqg7/image/upload/v1663828517/portfoliyo/projects/New_Project_3_pkuzlj.png",
+  // },
   {
     id: 6,
     projectName: "Sri Lanka Digital Helth Atales",
@@ -102,16 +115,6 @@ export const projectsData = [
     projectDesc:
       "ERL is Online Vehicle Revenue Licence Service in sri lanka. This dashboard create to genareate some report about ERL",
     tags: ["Laravel", "HTML, JavaScript, Ajax, Bootstrap", "MySQL"],
-    code: "",
-    demo: "",
-    image:
-      "https://res.cloudinary.com/dx1pvvqg7/image/upload/v1663836847/portfoliyo/projects/9_22_2022_2_23_13_PM_sbnjby.png",
-  },
-  {
-    id: 11,
-    projectName: "Bus Ticketing System",
-    projectDesc: "A Mobile Application",
-    tags: ["React-Native", "NodeJS","ReactJS", "MongoDB"],
     code: "",
     demo: "",
     image:
