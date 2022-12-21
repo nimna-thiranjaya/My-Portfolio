@@ -152,7 +152,7 @@ function Landing() {
               {headerData.resumePdf && (
                 <a
                   href={headerData.resumePdf}
-                  download="resume"
+                  download="Thiranjaya W.A.L.N."
                   target="_blank"
                   rel="noreferrer"
                 >
