@@ -33,10 +33,9 @@ function About() {
             😆
             <br />
             <br />
-            Currently, I am a 3rd year 2nd semester undergraduate student at Sri
+            Currently, I am a 4th year 1nd semester undergraduate student at Sri
             Lanka Institute of Information Technology, graduating with a BSc
-            (Hons) in Software Engineering and also I'm intern Full-Stack
-            software Engineer at ICTA of sri lanka
+            (Hons) in Software Engineering.
           </p>
         </div>
         <div className="about-img">
