@@ -8,4 +8,13 @@ export const experienceData = [
     startYear: "21.03.2022",
     endYear: "09.11.2022",
   },
+  {
+    id: 1,
+    imageIcon:
+      "https://res.cloudinary.com/dx1pvvqg7/image/upload/v1699205882/portfoliyo/logo-act_1_me09vc.png",
+    company: "Intahub (Pvt) Ltd",
+    jobtitle: "Intern Software Engineer",
+    startYear: "01.06.2023",
+    endYear: "Present",
+  },
 ];
