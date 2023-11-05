@@ -12,7 +12,7 @@ export const experienceData = [
     id: 1,
     imageIcon:
       "https://res.cloudinary.com/dx1pvvqg7/image/upload/v1699205882/portfoliyo/logo-act_1_me09vc.png",
-    company: "Intahub (Pvt) Ltd",
+    company: "Boost Hotels Software Solutions (Intahub Pvt Ltd)",
     jobtitle: "Intern Software Engineer",
     startYear: "01.06.2023",
     endYear: "Present",
