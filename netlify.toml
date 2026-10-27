@@ -1,0 +1,8 @@
+# Overrides the build settings in the Netlify UI.
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  # Vite 8 / Rolldown need Node 20.19+ (older Node lacks util.styleText).
+  NODE_VERSION = "22"
