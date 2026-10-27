@@ -1,0 +1,45 @@
+/* Breakpoints and reduced motion. Imported last so it wins. */
+/* responsive */
+@media (max-width: 1260px) {
+  .footer-bottom { padding-right: 64px; } /* room for the back-to-top button */
+}
+@media (max-width: 1060px) {
+  .nav a { padding: 6px 7px; }
+  .kbd-btn kbd { display: none; }
+  .kbd-btn { padding: 0; width: 40px; justify-content: center; }
+}
+@media (max-width: 960px) {
+  .hero { grid-template-columns: 1fr; padding: 40px 0 24px; }
+  .term { height: 480px; }
+  .about-grid, .contact { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .menu-btn { display: inline-grid; }
+  .nav {
+    position: fixed; top: 66px; left: 0; right: 0; bottom: 0; flex-direction: column; gap: 4px; padding: 24px 16px;
+    background: var(--bg); font-size: 26px;
+    opacity: 0; visibility: hidden; transition: opacity 0.3s, visibility 0.3s;
+  }
+  .nav.open { opacity: 1; visibility: visible; }
+  .nav a { padding: 10px 8px; opacity: 0; translate: -16px 0; transition: opacity 0.4s, translate 0.4s var(--ease), color 0.2s; }
+  .nav.open a { opacity: 1; translate: 0 0; transition-delay: calc(var(--i) * 45ms); }
+  .nav a::after { display: none; }
+  .section { padding: 80px 0; }
+  .scroll-hint { display: none; }
+}
+@media (max-width: 520px) {
+  .card { padding: 20px; }
+  .whoami dl div { grid-template-columns: 1fr; gap: 0; }
+  .palette li button { grid-template-columns: 1fr auto; }
+  .palette li button > span:first-child { display: none; }
+  .modal-inner { padding: 16px 18px 22px; }
+  .stat-value { font-size: 40px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .reveal, .skill-line, .boot pre > span { opacity: 1; }
+  .tilt { transform: none !important; }
+  .marquee-track { flex-wrap: wrap; width: auto; }
+  .marquee-track > span:nth-child(n + 40) { display: none; }
+  html { scroll-behavior: auto; }
+}

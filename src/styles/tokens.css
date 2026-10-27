@@ -1,0 +1,42 @@
+/* Design tokens. Light theme overrides via <html data-theme="light">. */
+:root {
+  --bg: #0a0a0a;
+  --bg-2: #111;
+  --card: #111211;
+  --border: #252625;
+  --text: #e8e8e8;
+  --muted: #7d7d7d;
+  --dot: #8a8a8a;
+  --accent: #00f59b;
+  --accent-ink: #052b1c;
+  --glow: rgba(0, 245, 155, 0.09);
+  --danger: #ff6b6b;
+  --c-telecom: #00f59b;
+  --c-enterprise: #5aa9ff;
+  --c-freelance: #ffb547;
+  --c-government: #b38bff;
+  --c-academic: #ff7eb6;
+  --mono: 'JetBrains Mono', ui-monospace, monospace;
+  --sans: 'Inter', system-ui, sans-serif;
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  color-scheme: dark;
+}
+:root[data-theme='light'] {
+  --bg: #f5f5f1;
+  --bg-2: #fff;
+  --card: #fff;
+  --border: #e0e0d9;
+  --text: #151515;
+  --muted: #696969;
+  --dot: #8f8f85;
+  --accent: #00a86b;
+  --accent-ink: #fff;
+  --glow: rgba(0, 168, 107, 0.1);
+  --danger: #d93838;
+  --c-telecom: #00995f;
+  --c-enterprise: #1f74d6;
+  --c-freelance: #c27a00;
+  --c-government: #7a4fd6;
+  --c-academic: #d1407f;
+  color-scheme: light;
+}
