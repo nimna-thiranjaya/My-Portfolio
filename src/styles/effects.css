@@ -18,14 +18,41 @@ body::before {
 .marquee i { font-style: normal; font-size: 9px; color: var(--accent); }
 @keyframes marquee { to { translate: -50% 0; } }
 
-/* boot screen */
-.boot { position: fixed; inset: 0; z-index: 100; background: var(--bg); display: grid; place-content: center; gap: 24px; padding: 16px; transition: opacity 0.45s, scale 0.45s var(--ease); }
-.boot.leaving { opacity: 0; scale: 1.03; pointer-events: none; }
-.boot pre { font-size: 14px; line-height: 1.9; }
-.boot pre > span { display: block; opacity: 0; animation: fadeUp 0.3s var(--ease) var(--d) both; }
-.boot-bar { width: min(360px, 80vw); height: 2px; background: var(--border); overflow: hidden; border-radius: 2px; }
-.boot-bar i { display: block; height: 100%; background: var(--accent); box-shadow: 0 0 12px var(--accent); animation: load 1.4s var(--ease) both; }
-@keyframes load { from { width: 0; } to { width: 100%; } }
+/* boot screen: terminal window over a dot grid; exits as a curtain lifting upward */
+.boot {
+  position: fixed; inset: 0; z-index: 100; display: grid; place-items: center; padding: 16px; overflow: hidden;
+  background: var(--bg); clip-path: inset(0 0 0 0); transition: clip-path 0.7s var(--ease);
+}
+.boot::before {
+  content: ''; position: absolute; inset: 0; opacity: 0.35;
+  background: radial-gradient(var(--dot) 1px, transparent 1.6px) 0 0 / 28px 28px;
+  mask-image: radial-gradient(circle at center, #000 10%, transparent 65%);
+}
+.boot-glow { position: absolute; width: 560px; height: 560px; max-width: 120vw; border-radius: 50%; background: radial-gradient(var(--glow), transparent 65%); animation: breathe 2.4s ease-in-out infinite; }
+@keyframes breathe { 50% { scale: 1.15; opacity: 0.7; } }
+.boot-window {
+  position: relative; width: min(480px, 100%); padding: 16px 20px 18px;
+  background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+  box-shadow: 0 40px 120px -50px var(--accent);
+  animation: pop 0.5s var(--ease) backwards; transition: opacity 0.35s, translate 0.6s var(--ease);
+}
+.boot-pct { color: var(--accent); font-size: 12px; white-space: pre; }
+.boot-logo { display: flex; align-items: center; font-size: 28px; font-weight: 800; letter-spacing: -0.02em; margin: 20px 0 14px; }
+.boot-logo .dot { width: 10px; height: 10px; margin-right: 12px; }
+.boot-steps { list-style: none; font-size: 13px; line-height: 2; min-height: 10em; } /* 5 lines, no layout jump */
+.boot-steps li { display: flex; gap: 10px; white-space: nowrap; animation: fadeUp 0.25s var(--ease) both; }
+.boot-steps li > span:nth-child(2) { overflow: hidden; text-overflow: ellipsis; }
+.boot-steps .st { flex: none; white-space: pre; }
+.boot-steps .ms { margin-left: auto; flex: none; }
+.boot-bar { height: 3px; margin-top: 14px; background: var(--border); border-radius: 3px; overflow: hidden; }
+.boot-bar i {
+  display: block; height: 100%; transform-origin: left; border-radius: inherit;
+  background: linear-gradient(90deg, var(--accent), color-mix(in srgb, var(--accent) 40%, #fff));
+  box-shadow: 0 0 12px var(--accent);
+}
+.boot-foot { display: flex; justify-content: space-between; gap: 12px; margin-top: 12px; }
+.boot.leaving { clip-path: inset(0 0 100% 0); pointer-events: none; }
+.boot.leaving .boot-window { opacity: 0; translate: 0 -32px; }
 html[data-booting] .reveal.in { animation-play-state: paused; }
 
 /* toasts */

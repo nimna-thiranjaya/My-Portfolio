@@ -1,16 +1,22 @@
 import { useCallback, useEffect, useState } from 'react'
 import { prefersReducedMotion } from '@/lib/dom'
 
-// Boot screen shows once per browser session and never with reduced motion.
-// Sets <html data-booting> while it runs so reveal animations wait for it.
+// Boot screen lifecycle: 'boot' → 'leaving' (curtain lifting) → 'done' (unmounted).
+// Shows once per browser session and never with reduced motion.
+// `ready` flips at 'leaving' so the page animates in while the curtain lifts;
+// until then <html data-booting> holds reveal animations.
 export function useBoot() {
-  const [booting, setBooting] = useState(() => {
-    try { return !sessionStorage.getItem('booted') && !prefersReducedMotion() } catch { return false }
+  const [phase, setPhase] = useState(() => {
+    try { return !sessionStorage.getItem('booted') && !prefersReducedMotion() ? 'boot' : 'done' } catch { return 'done' }
   })
-  useEffect(() => { document.documentElement.toggleAttribute('data-booting', booting) }, [booting])
-  const done = useCallback(() => {
+  const ready = phase !== 'boot'
+  useEffect(() => { document.documentElement.toggleAttribute('data-booting', !ready) }, [ready])
+
+  const leave = useCallback(() => {
     try { sessionStorage.setItem('booted', '1') } catch { /* storage blocked */ }
-    setBooting(false)
+    setPhase(p => (p === 'boot' ? 'leaving' : p))
   }, [])
-  return [booting, done]
+  const done = useCallback(() => setPhase('done'), [])
+
+  return { show: phase !== 'done', ready, leave, done }
 }

@@ -37,7 +37,7 @@
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
-  .reveal, .skill-line, .boot pre > span { opacity: 1; }
+  .reveal, .skill-line { opacity: 1; }
   .tilt { transform: none !important; }
   .marquee-track { flex-wrap: wrap; width: auto; }
   .marquee-track > span:nth-child(n + 40) { display: none; }

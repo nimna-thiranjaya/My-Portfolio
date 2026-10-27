@@ -24,7 +24,7 @@ import Contact from '@/sections/Contact/Contact'
 
 export default function App() {
   const [theme, toggleTheme] = useTheme()
-  const [booting, bootDone] = useBoot()
+  const boot = useBoot()
   const [palette, setPalette] = useState(false)
   const active = useScrollState(NAV)
   useReveal()
@@ -36,11 +36,11 @@ export default function App() {
   return (
     <>
       <a href="#about" className="skip-link">skip to content</a>
-      {booting && <Boot onDone={bootDone} />}
+      {boot.show && <Boot onLeave={boot.leave} onDone={boot.done} />}
       <DotField theme={theme} />
       <Header active={active} theme={theme} onToggleTheme={toggleTheme} onOpenPalette={openPalette} />
       <main>
-        <Hero ready={!booting} />
+        <Hero ready={boot.ready} />
         <About />
         <Experience />
         <Projects />
