@@ -30,14 +30,14 @@ export const profile = {
   // Shown as `whoami` output in the about section.
   facts: [
     ['location', 'Colombo, Sri Lanka'],
-    ['current', 'Software Engineer @ Arimac'],
+    ['current', 'Software Engineer @Arimac'],
     ['focus', 'Java · Spring Boot · Microservices'],
-    ['education', "BSc (Hons) IT, SLIIT · Dean's List"],
+    ['education', "BSc (Hons) IT Specializing in Software Engineering, SLIIT"],
     ['open to', 'backend / full-stack roles, freelance'],
   ],
   stats: [
     { value: '5+', label: 'years building software' },
-    { value: '16', label: 'projects delivered' },
+    { value: '20+', label: 'projects delivered' },
     { value: '10M+', label: 'telecom customers served' },
   ],
 }
@@ -48,6 +48,7 @@ export const socials = [
   { icon: 'linkedin', label: 'LinkedIn', url: 'https://www.linkedin.com/in/nimna-thiranjaya/', hero: true },
   { icon: 'medium', label: 'Medium', url: 'https://medium.com/@nimnathiranjaya523', hero: true },
   { icon: 'twitter', label: 'X / Twitter', url: 'https://twitter.com/thiranjayaw' },
-  { icon: 'facebook', label: 'Facebook', url: 'https://www.facebook.com/nimna.thiranjaya.5/' },
-  { icon: 'instagram', label: 'Instagram', url: 'https://www.instagram.com/__n_i_m_n_a__/' },
+  { icon: 'facebook', label: 'Facebook', url: 'https://www.facebook.com/Nimna.Thiranjaya/' },
+  { icon: 'instagram', label: 'Instagram', url: 'https://www.instagram.com/nimna_thiranjaya_/' },
+  { icon: 'whatsapp', label: 'WhatsApp', url: 'https://wa.me/94703002768' },
 ]
